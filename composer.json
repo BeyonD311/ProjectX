@@ -1,0 +1,28 @@
+{
+    "name": "beyond/localhost",
+    "description": "my project (code name first)",
+    "type": "autoload",
+    "require": {
+        "zendframework/zend-loader": "^2.6@dev"
+    },
+    "autoload": {
+        "classmap": ["vendor/core/Router.php"],
+        "psr-4": {
+            "app\\": "app/",
+            "app\\controller\\": "app/controller",
+            "vendor\\core\\": "vendor/core"
+        },
+        "files": [
+            "config/global_env.php"
+        ]
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sergey Dankov",
+            "email": "sergeydankov31@outlook.com"
+        }
+    ],
+    
+    "minimum-stability": "dev"
+}
